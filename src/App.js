@@ -10,7 +10,7 @@ import Feedback from "./components/Feedback/Feedback";
 import FeedbackStudent from "./components/FeedbackStudent/FeedbackStudent";
 import "./App.css";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route,HashRouter  } from "react-router-dom";
 
 import axios from "axios";
 import ThankYou from "./components/ThankYou/ThankYou";
@@ -21,7 +21,7 @@ const App = () => {
   return (
     <div>
       <Navbar />
-      <BrowserRouter>
+      <HashRouter >
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="redirect" element={<Redirect />} />
@@ -30,7 +30,7 @@ const App = () => {
           <Route path="/feedback_student" element={<FeedbackStudent />} />
           <Route path="/thankYou" element={<ThankYou />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <Footer />
     </div>
   );
