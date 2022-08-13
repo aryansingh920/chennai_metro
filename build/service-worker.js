@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/chennai_metro/precache-manifest.98c3418568c940aa428adc1b1b9f27e8.js"
+  "/chennai_metro/precache-manifest.059b373ec2d1eb8f8a4b7cb2458a7f15.js"
 );
 
 workbox.clientsClaim();
